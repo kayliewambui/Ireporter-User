@@ -1,0 +1,39 @@
+/* src/components/UserDashboard/UserRecords.css */
+
+.user-records {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .guide-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .guide-card {
+    flex: 1;
+    margin: 0 10px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .report-button {
+    display: block;
+    margin: 20px auto;
+    background-color: #ff9800;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .need-help {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #6200ea;
+  }
+  

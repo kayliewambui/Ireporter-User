@@ -1,0 +1,16 @@
+/* src/components/UserDashboard/UserSidebar.css */
+
+.user-sidebar {
+    width: 250px;
+    background-color: #6200ea;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 20px;
+  }
+  
+  .user-sidebar .MuiListItemIcon-root {
+    color: #fff;
+  }
+  

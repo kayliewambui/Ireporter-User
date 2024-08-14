@@ -1,17 +1,23 @@
 // src/components/UserDashboard/UserSidebar.js
 import React from 'react';
-import { List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import { Drawer, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver';
+import HistoryIcon from '@mui/icons-material/History';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import SettingsIcon from '@mui/icons-material/Settings';
-import LogoutIcon from '@mui/icons-material/Logout';
-import './UserSidebar.css';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 
 const UserSidebar = () => {
   return (
-    <aside className="user-sidebar">
-      <List component="nav">
+    <Drawer
+      variant="permanent"
+      sx={{
+        width: 240,
+        flexShrink: 0,
+        [`& .MuiDrawer-paper`]: { width: 240, boxSizing: 'border-box' },
+      }}
+    >
+      <List>
         <ListItem button>
           <ListItemIcon>
             <DashboardIcon />
@@ -20,7 +26,7 @@ const UserSidebar = () => {
         </ListItem>
         <ListItem button>
           <ListItemIcon>
-            <RecordVoiceOverIcon />
+            <HistoryIcon />
           </ListItemIcon>
           <ListItemText primary="Past Records" />
         </ListItem>
@@ -38,12 +44,12 @@ const UserSidebar = () => {
         </ListItem>
         <ListItem button>
           <ListItemIcon>
-            <LogoutIcon />
+            <ExitToAppIcon />
           </ListItemIcon>
           <ListItemText primary="Log out" />
         </ListItem>
       </List>
-    </aside>
+    </Drawer>
   );
 };
 

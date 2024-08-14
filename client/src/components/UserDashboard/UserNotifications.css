@@ -1,10 +1,21 @@
-/* src/components/UserDashboard/UserNotifications.css */
-
 .user-notifications {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.user-notifications h2 {
+  margin-bottom: 20px;
+}
+
+.user-notifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user-notifications ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}

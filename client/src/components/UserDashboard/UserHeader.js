@@ -1,29 +1,27 @@
 // src/components/UserDashboard/UserHeader.js
 import React from 'react';
-import { Avatar, IconButton, Typography } from '@mui/material';
+import { AppBar, Toolbar, Typography, Avatar, Box, IconButton } from '@mui/material';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import './UserHeader.css';
 
 const UserHeader = () => {
   return (
-    <header className="user-header">
-      <div className="header-left">
-        <Typography variant="h4">Dashboard</Typography>
-        <Typography variant="subtitle1">Welcome back, Kaylie</Typography>
-      </div>
-      <div className="header-right">
-        <IconButton>
+    <AppBar position="static" color="default">
+      <Toolbar>
+        <Box sx={{ flexGrow: 1 }}>
+          <Typography variant="h6">Sort:</Typography>
+        </Box>
+        <IconButton color="inherit">
           <NotificationsIcon />
         </IconButton>
-        <div className="user-info">
-          <Avatar alt="Kaylie Wambui" src="/path/to/userImage.png" />
-          <div className="user-details">
-            <Typography variant="body1" className="user-id">Work ID: 12345</Typography>
-            <Typography variant="body2" className="user-email">kaylie.wambui@ireporter.com</Typography>
-          </div>
-        </div>
-      </div>
-    </header>
+        <Box sx={{ display: 'flex', alignItems: 'center', marginLeft: '15px' }}>
+          <Avatar alt="Kaylie Wambui" src="/static/images/avatar/1.jpg" />
+          <Box sx={{ marginLeft: '10px' }}>
+            <Typography variant="body1">Work ID: 12345</Typography>
+            <Typography variant="body2">kaylie.wambui@ireporter.com</Typography>
+          </Box>
+        </Box>
+      </Toolbar>
+    </AppBar>
   );
 };
 

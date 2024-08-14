@@ -1,12 +1,20 @@
-// src/components/UserDashboard/UserNotifications.js
 import React from 'react';
 import './UserNotifications.css';
 
 const UserNotifications = () => {
+  const notifications = [
+    'Your report has been reviewed.',
+    'New message from admin.',
+  ];
+
   return (
     <div className="user-notifications">
       <h2>Notifications</h2>
-      <p>You have no new notifications at this time.</p>
+      <ul>
+        {notifications.map((notification, index) => (
+          <li key={index}>{notification}</li>
+        ))}
+      </ul>
     </div>
   );
 };
